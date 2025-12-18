@@ -191,12 +191,12 @@ table tbody tr:nth-of-type(even) {
 }
 
 table tbody tr:last-of-type {
-	border-bottom: 2px solid #e91e63;
+	border-bottom: 2px solid var(--orange-spicy);
 }
 
 table tbody tr.active-row {
 	font-weight: bold;
-	color: #e91e63;
+	color: var(--orange-spicy);
 }
 
 /* ======================= CONTAINER & HEADINGS ======================= */
