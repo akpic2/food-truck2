@@ -2,370 +2,394 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ======================= HEADER ======================= */
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 5px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 130px;
-	background-color: transparent;
-	z-index: 50;
-	transition: background-color 0.22s ease, box-shadow 0.22s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 130px;
+  background-color: transparent;
+  z-index: 50;
+  transition: background-color 0.22s ease, box-shadow 0.22s ease;
 }
 
 header.scrolled {
-	background-color: var(--charcoal);
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: var(--charcoal);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .acceui_logo {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
 }
 
 .acceui_logo img {
-	max-width: 200px;
-	width: 100%;
-	height: auto;
-	object-fit: contain;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .acceuil_nav1,
 .acceuil_nav2 {
-	display: flex;
-	flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 .acceuil_nav1 {
-	justify-content: flex-start;
-	padding-left: 80px;
+  justify-content: flex-start;
+  padding-left: 80px;
 }
 
 .acceuil_nav2 {
-	justify-content: flex-end;
-	padding-right: 80px;
+  justify-content: flex-end;
+  padding-right: 80px;
 }
 
 .acceuil_nav1 ul,
 .acceuil_nav2 ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .acceuil_nav1 ul {
-	gap: 220px;
+  gap: 220px;
 }
 
 .acceuil_nav2 ul {
-	gap: 100px;
+  gap: 100px;
 }
 
 .acceuil_nav1 a,
 .acceuil_nav2 a {
-	text-decoration: none;
-	color: var(--white);
-	font-weight: 700;
-	font-size: 28px;
-	letter-spacing: 3px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 3px;
 }
 
 .acceuil_nav1 a.active,
 .acceuil_nav1 a:hover,
 .acceuil_nav2 a:hover {
-	color: var(--orange-spicy);
+  color: var(--orange-spicy);
 }
 
 /* ======================= MAIN ======================= */
-main {
-	background-image: url("../img/img-localisation/map-1301054_1920.jpg");
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100%;
-	width: 100%;
-	position: relative;
-	filter: none;
-	object-fit: cover;
+/* ======================= HERO MAP ======================= */
+.map-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
+#map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Texte au-dessus de la carte */
 .localisation_texte {
-	text-align: center;
-	padding-top: 550px;
-	left: 25%;
-	font-size: 70px;
-	color: var(--white);
-	letter-spacing: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 70px;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+#map {
+	width: 100%;
+	height: 450px; /* 👈 taille de la carte */
+	
+}
+
+
+.localisation_texte {
+  text-align: center;
+  padding-top: 550px;
+  left: 25%;
+  font-size: 70px;
+  color: var(--white);
+  letter-spacing: 4px;
 }
 
 .localisation_texte p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	font-family: "Bebas Neue", cursive;
-	font-size: 2em;
-	text-align: center;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* ======================= SECTION TABLEAU ======================= */
 .tableau {
-	border: 2px solid black;
-	margin: 20px;
-	background-color: white;
-	font-family: Arial, sans-serif;
-	background-color: #ffffff;
-	color: #333;
-	font-size: 18px;
-	text-align: center;
+  border: 2px solid black;
+  margin: 20px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+}
+table {
+  border: 4px solid orange;
 }
 
 .tableau thead {
-	background-color: var(--orange-spicy);
-	color: white;
-	letter-spacing: 4px;
-	margin: 20px;
+  background-color: var(--orange-spicy);
+  color: white;
+  letter-spacing: 4px;
+  margin: 20px;
 }
 
 .tableau td {
-	padding: 10px;
+  padding: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  word-spacing: 3px;
 }
 
 .tableau,
 .contenue {
-	font-family: Arial, sans-serif;
-	background-color: #ffffff;
-	margin: 0;
-	padding: 0px 50px;
-	color: #333;
-	font-size: 18px;
-	text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0px 50px;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
 }
 
 table {
-	width: 100%;
-	border-collapse: collapse;
-	margin: 25px auto;
-	font-size: 1em;
-	font-family: sans-serif;
-	min-width: 400px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 1em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 table thead tr {
-	background-color: var(--orange-spicy);
-	color: #ffffff;
-	text-align: left;
+  background-color: var(--orange-spicy);
+  color: #ffffff;
+  text-align: left;
 }
 
 table th,
 table td {
-	padding: 12px 15px;
-	text-align: center;
+  padding: 12px 15px;
+  text-align: center;
 }
 
 table tbody tr {
-	border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 table tbody tr:nth-of-type(even) {
-	background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 table tbody tr:last-of-type {
-	border-bottom: 2px solid var(--orange-spicy);
+  border-bottom: 2px solid var(--orange-spicy);
 }
 
 table tbody tr.active-row {
-	font-weight: bold;
-	color: var(--orange-spicy);
+  font-weight: bold;
+  color: var(--orange-spicy);
 }
 
 /* ======================= CONTAINER & HEADINGS ======================= */
 .container {
-	max-width: 1200px;
-	margin: 20px auto;
-	padding: 20px;
-	background-color: #fff;
-	border-radius: 8px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	text-align: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 h1 {
-	text-align: center;
-	color: #333;
-	font-family: "Bebas Neue", cursive;
-	font-size: 3em;
-	margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 h2 {
-	text-align: center;
-	color: #666;
-	font-family: Arial, sans-serif;
-	font-size: 1.5em;
-	margin-bottom: 30px;
+  text-align: center;
+  color: #666;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 30px;
 }
 
 .warning-box {
-	background-color: #ffffff;
-	border-left: 4px solid #ffc107;
-	padding: 15px;
-	margin-bottom: 20px;
-	border-radius: 4px;
-	text-align: center;
+  background-color: #ffffff;
+  border-left: 4px solid #ffc107;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 /* ======================= MAP ======================= */
 .map-container {
-	text-align: center;
-	margin: 20px 0;
-	padding: 20px;
-	background-color: #ffffff;
-	border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .map-placeholder {
-	width: 100%;
-	height: 400px;
-	background-color: #ffffff;
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #999;
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
 }
 
 /* ======================= RESPONSIVE ======================= */
 @media (max-width: 768px) {
-	.contact-section {
-		flex-direction: column;
-	}
+  .contact-section {
+    flex-direction: column;
+  }
 }
 
 /* ======================= CONTENU ======================= */
 .contenue {
-	padding: 40px;
+  padding: 40px;
 }
 
 .contenue p,
 h3 {
-	padding: 12px;
-	font-family: "Bebas Neue", cursive;
-	font-size: 34px;
+  padding: 12px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 34px;
 }
 
 /* ======================= CONTACT ======================= */
 .contact-section {
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	padding: 40px;
-	gap: 20px;
-	flex-wrap: wrap;
-	max-width: 1200px;
-	margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-box,
 .social-box {
-	flex: 1;
-	min-width: 300px;
-	padding: 30px;
-	border-radius: 10px;
-	color: white;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 450px;
-	height: 300px;
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 300px;
 }
 
 .contact-box {
-	background-color: #FF6B35;
+  background-color: #ff6b35;
 }
 
 .social-box {
-	background: linear-gradient(135deg, #8e44ad, #3498db);
+  background: linear-gradient(135deg, #8e44ad, #3498db);
 }
 
 .contact-box h3,
 .social-box h3 {
-	font-size: 35px;
-	margin-bottom: 15px;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
 
 .contact-box p,
 .social-box p {
-	font-size: 25px;
-	font-family: "Bebas Neue", sans-serif;
-	margin: 10px 0;
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 10px 0;
 }
 
 .phone {
-	font-size: 1.5em;
-	font-weight: bold;
-	margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 .social-links {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .social-links a {
-	color: white;
-	text-decoration: none;
-	padding: 10px 20px;
-	border-radius: 25px;
-	font-weight: bold;
-	margin: 0 5px;
-	display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 0 5px;
+  display: inline-block;
 }
 
 .instagram-link {
-	background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
 }
 
 .facebook-link {
-	background-color: #4267B2;
+  background-color: #4267b2;
 }
 
-footer, 
-footer p, 
-footer a, 
-.footer, 
-.footer p, 
+footer,
+footer p,
+footer a,
+.footer,
+.footer p,
 .footer a {
-	font-size: 24px !important;
+  font-size: 24px !important;
 }
-
 
 .social_tooltip {
-    font-size: 20px !important;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
+  font-size: 20px !important;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
 }
-
-
