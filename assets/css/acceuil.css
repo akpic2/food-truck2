@@ -488,3 +488,43 @@ section {
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     filter: brightness(1.05);
 }
+
+/* ======================= RESPONSIVE MOBILE ======================= */
+@media (max-width: 480px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    header {
+        min-height: 80px;
+    }
+
+    .acceuil_slogan {
+        font-size: 22px;
+    }
+
+    .acceuil_cta, .acceuil_cta2 {
+        width: 150px;
+        height: 40px;
+    }
+
+    .acceuil_histoire_texte h2 {
+        font-size: 20px;
+    }
+
+    .acceuil_histoire_texte p {
+        font-size: 14px;
+    }
+
+    .actualite_titre {
+        font-size: 20px;
+    }
+
+    .acceuil_actualite h3 {
+        font-size: 1rem;
+    }
+
+    .acceuil_actualite p {
+        font-size: 0.75rem;
+    }
+}

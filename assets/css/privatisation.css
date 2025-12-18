@@ -283,3 +283,296 @@ footer a {
 	font-family: 'Bebas Neue', sans-serif;
 	letter-spacing: 1px;
 }
+
+/* ======================= RESPONSIVE MOBILE ======================= */
+@media (max-width: 768px) {
+	body, html {
+		font-size: 16px;
+	}
+
+	header {
+		height: 100px;
+		min-height: 100px;
+		flex-wrap: wrap;
+	}
+
+	header a {
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+
+	.acceuil_nav1,
+	.acceuil_nav2 {
+		display: none;
+	}
+
+	header .acceui_logo img {
+		max-height: 80px;
+	}
+
+	.container {
+		padding-top: 150px;
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 100%;
+	}
+
+	h1, h2, h3 {
+		font-size: 1.5rem;
+		letter-spacing: 1px;
+	}
+
+	.hero-event {
+		padding: 40px 15px;
+		margin-bottom: 30px;
+		border-radius: 8px;
+	}
+
+	.headline {
+		font-size: 2rem;
+		margin-bottom: 15px;
+	}
+
+	.subheadline {
+		font-size: 1.1rem;
+		margin-bottom: 20px;
+	}
+
+	.section-title {
+		font-size: 1.5rem;
+		margin: 30px 0 20px;
+	}
+
+	.section-title i {
+		margin-right: 8px;
+	}
+
+	p,
+	.desc,
+	.message-content {
+		font-size: 0.95rem;
+		letter-spacing: 0.5px;
+	}
+
+	.formula-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.formula-card {
+		padding: 20px;
+		border-left: 4px solid var(--primary-color);
+	}
+
+	.formula-card h3 {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+
+	.highlight-text {
+		font-size: 1.3rem;
+		margin: 8px 0;
+	}
+
+	.price-details {
+		flex-direction: column;
+		gap: 15px;
+		padding: 15px;
+	}
+
+	.price-item {
+		border-bottom: 1px solid #555;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+
+	.price-item:last-child {
+		border-bottom: none;
+	}
+
+	.price-label {
+		font-size: 0.85rem;
+	}
+
+	.price-value {
+		font-size: 2rem;
+		margin-top: 5px;
+	}
+
+	.contact-form {
+		padding: 20px 15px;
+		gap: 15px;
+		flex-direction: column;
+	}
+
+	.form-group {
+		width: 100%;
+	}
+
+	.form-group.half-width {
+		flex: 1 1 100%;
+		min-width: auto;
+	}
+
+	label {
+		font-size: 0.9rem;
+		margin-bottom: 6px;
+	}
+
+	input,
+	select,
+	textarea {
+		padding: 10px;
+		font-size: 16px;
+		border-radius: 4px;
+	}
+
+	textarea {
+		min-height: 100px;
+		resize: vertical;
+	}
+
+	.btn-cta,
+	.btn-submit {
+		padding: 10px 25px;
+		font-size: 1rem;
+		width: 100%;
+		max-width: 300px;
+		border-radius: 50px;
+	}
+
+	.tarifs-intro {
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 480px) {
+	body, html {
+		font-size: 14px;
+	}
+
+	header {
+		height: 80px;
+		min-height: 80px;
+	}
+
+	header a {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+
+	header .acceui_logo img {
+		max-height: 60px;
+	}
+
+	.container {
+		padding-top: 120px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	h1, h2, h3 {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+		letter-spacing: 0.5px;
+	}
+
+	.hero-event {
+		padding: 30px 10px;
+		margin-bottom: 20px;
+	}
+
+	.headline {
+		font-size: 1.5rem;
+		margin-bottom: 12px;
+	}
+
+	.subheadline {
+		font-size: 0.9rem;
+		margin-bottom: 15px;
+	}
+
+	.section-title {
+		font-size: 1.2rem;
+		margin: 20px 0 15px;
+		padding-bottom: 3px;
+	}
+
+	p,
+	.desc,
+	.message-content {
+		font-size: 0.9rem;
+	}
+
+	.formula-grid {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+
+	.formula-card {
+		padding: 15px;
+	}
+
+	.formula-card h3 {
+		font-size: 1rem;
+		margin-bottom: 8px;
+	}
+
+	.highlight-text {
+		font-size: 1.1rem;
+		margin: 6px 0;
+	}
+
+	.price-details {
+		flex-direction: column;
+		gap: 12px;
+		padding: 12px;
+	}
+
+	.price-item {
+		padding-bottom: 12px;
+	}
+
+	.price-label {
+		font-size: 0.8rem;
+	}
+
+	.price-value {
+		font-size: 1.6rem;
+	}
+
+	.contact-form {
+		padding: 15px 10px;
+		gap: 12px;
+	}
+
+	label {
+		font-size: 0.85rem;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+
+	input,
+	select,
+	textarea {
+		padding: 8px;
+		font-size: 14px;
+	}
+
+	textarea {
+		min-height: 80px;
+	}
+
+	.btn-cta,
+	.btn-submit {
+		padding: 8px 20px;
+		font-size: 0.9rem;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.tarifs-intro {
+		font-size: 0.9rem;
+		margin-bottom: 20px;
+	}
+}

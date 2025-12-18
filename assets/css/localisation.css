@@ -411,4 +411,182 @@ footer a,
     letter-spacing: 1px;
 }
 
+/* ======================= RESPONSIVE MOBILE ======================= */
+@media (max-width: 768px) {
+	header {
+		min-height: 100px;
+	}
 
+	.acceuil_nav1,
+	.acceuil_nav2 {
+		display: none;
+	}
+
+	.acceui_logo {
+		width: 100px;
+	}
+
+	.acceui_logo img {
+		max-width: 120px;
+	}
+
+	.map-hero {
+		padding-top: 150px;
+		padding-bottom: 30px;
+	}
+
+	.map-box {
+		width: 95%;
+		padding: 25px 15px;
+	}
+
+	.map-title {
+		font-size: 2em;
+	}
+
+	.map-subtitle {
+		font-size: 1em;
+	}
+
+	#map {
+		height: 350px;
+	}
+
+	.localisation_texte {
+		padding-top: 300px;
+		font-size: 40px;
+	}
+
+	.localisation_texte p {
+		font-size: 1.3em;
+	}
+
+	.tableau td {
+		padding: 12px 8px;
+		font-size: 16px;
+	}
+
+	.tableau,
+	.contenue {
+		padding: 0px 15px;
+	}
+
+	table {
+		min-width: auto;
+		font-size: 0.85em;
+	}
+
+	table th,
+	table td {
+		padding: 10px 8px;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	.container {
+		padding: 15px;
+		margin: 15px auto;
+	}
+
+	.contact-box,
+	.social-box {
+		width: 100%;
+		height: auto;
+		min-width: auto;
+		padding: 20px;
+		margin: 10px 0;
+	}
+
+	.contact-box h3,
+	.social-box h3 {
+		font-size: 24px;
+	}
+
+	.contact-box p,
+	.social-box p {
+		font-size: 18px;
+	}
+
+	.social-links a {
+		padding: 8px 15px;
+		margin: 3px;
+	}
+
+	.contenue p,
+	h3 {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 480px) {
+	header {
+		min-height: 80px;
+	}
+
+	.map-hero {
+		padding-top: 120px;
+	}
+
+	.map-box {
+		padding: 15px 10px;
+	}
+
+	.map-title {
+		font-size: 1.5em;
+	}
+
+	.map-subtitle {
+		font-size: 0.9em;
+	}
+
+	#map {
+		height: 280px;
+	}
+
+	.localisation_texte {
+		padding-top: 200px;
+		font-size: 28px;
+	}
+
+	.localisation_texte p {
+		font-size: 1.1em;
+	}
+
+	.tableau td {
+		padding: 8px 4px;
+		font-size: 14px;
+	}
+
+	table {
+		font-size: 0.75em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	.contact-box h3,
+	.social-box h3 {
+		font-size: 18px;
+	}
+
+	.contact-box p,
+	.social-box p {
+		font-size: 14px;
+	}
+
+	.contenue p,
+	h3 {
+		font-size: 18px;
+	}
+}
