@@ -376,4 +376,10 @@ header.scrolled {
 	transform: scale(1.8);
 }
 
+.simple-list li:hover .side-image img {
+	transform: scale(2.5);
+}
+
+
+
 
