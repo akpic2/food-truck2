@@ -99,3 +99,5 @@ window.addEventListener('scroll', () => {
         histoireTexte.classList.remove('visible');
     }
 });
+
+

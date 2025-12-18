@@ -376,15 +376,10 @@ header.scrolled {
 	transform: scale(1.8);
 }
 
-/* ======================= RESPONSIVE ======================= */
-@media (max-width: 768px) {
-	.hero h1 {
-		font-size: 2.2rem;
-	}
-	.header {
-		flex-direction: column;
-	}
-	.header nav {
-		margin-top: 10px;
-	}
+.simple-list li:hover .side-image img {
+	transform: scale(2.5);
 }
+
+
+
+
