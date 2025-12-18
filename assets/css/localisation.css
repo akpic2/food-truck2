@@ -255,12 +255,7 @@ h2 {
 	color: #999;
 }
 
-/* ======================= RESPONSIVE ======================= */
-@media (max-width: 768px) {
-	.contact-section {
-		flex-direction: column;
-	}
-}
+
 
 /* ======================= CONTENU ======================= */
 .contenue {

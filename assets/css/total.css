@@ -1,10 +1,10 @@
 /* Couleurs globales (palette fournie) */
 :root{
-	--orange-spicy: #FF7A00; /* 🧡 Orange épicé */
-	--charcoal: #1A1A1A;     /* ⚫ Noir charbon */
-	--white: #FFFFFF;        /* 🤍 Blanc pur */
-	--steel-gray: #BFBFBF;   /* 🧂 Gris acier */
-	--paprika: #E63946;      /* 🌶️ Rouge paprika */
+	--orange-spicy: #FF7A00; 
+	--charcoal: #1A1A1A;     
+	--white: #FFFFFF;        
+	--steel-gray: #BFBFBF;   
+	--paprika: #E63946;      
 
 	--max-width: 1100px;
 }
