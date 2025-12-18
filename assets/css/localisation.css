@@ -95,6 +95,7 @@ header.scrolled {
 /* ======================= MAIN ======================= */
 main {
 	background-image: url("../img/img-localisation/map-1301054_1920.jpg");
+	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -366,3 +367,5 @@ footer a,
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1px;
 }
+
+
