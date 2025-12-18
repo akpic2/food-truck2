@@ -155,7 +155,7 @@ main {
 	font-family: Arial, sans-serif;
 	background-color: #ffffff;
 	margin: 0;
-	padding: 0;
+	padding: 0px 50px;
 	color: #333;
 	font-size: 18px;
 	text-align: center;
@@ -172,7 +172,7 @@ table {
 }
 
 table thead tr {
-	background-color: #e91e63;
+	background-color: var(--orange-spicy);
 	color: #ffffff;
 	text-align: left;
 }
@@ -192,12 +192,12 @@ table tbody tr:nth-of-type(even) {
 }
 
 table tbody tr:last-of-type {
-	border-bottom: 2px solid #e91e63;
+	border-bottom: 2px solid var(--orange-spicy);
 }
 
 table tbody tr.active-row {
 	font-weight: bold;
-	color: #e91e63;
+	color: var(--orange-spicy);
 }
 
 /* ======================= CONTAINER & HEADINGS ======================= */
@@ -280,7 +280,7 @@ h3 {
 	background-color: white;
 	display: flex;
 	justify-content: center;
-	padding: 20px;
+	padding: 40px;
 	gap: 20px;
 	flex-wrap: wrap;
 	max-width: 1200px;
