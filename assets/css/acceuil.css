@@ -490,6 +490,141 @@ section {
 }
 
 /* ======================= RESPONSIVE MOBILE ======================= */
+@media (max-width: 768px) {
+    html, body {
+        font-size: 16px;
+        scroll-snap-type: none;
+    }
+
+    header {
+        min-height: 100px;
+        flex-wrap: wrap;
+    }
+
+    .acceui_logo {
+        width: 100px;
+    }
+
+    .acceui_logo img {
+        max-width: 120px;
+    }
+
+    .acceuil_nav1 {
+        display: flex !important;
+        justify-content: flex-start;
+        padding-left: 10px;
+        flex: 0.5;
+    }
+
+    .acceuil_nav2 {
+        display: flex !important;
+        justify-content: flex-end;
+        padding-right: 10px;
+        flex: 0.5;
+    }
+
+    .acceuil_nav1 ul, .acceuil_nav2 ul {
+        gap: 10px;
+    }
+
+    .acceuil_nav1 a, .acceuil_nav2 a {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    main div {
+        width: 100%;
+    }
+
+    main div:nth-child(2) {
+        display: none;
+    }
+
+    .acceuil_slogan {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .acceuil_cta, .acceuil_cta2 {
+        width: 180px;
+        height: 45px;
+    }
+
+    section {
+        padding: 40px 16px;
+        gap: 20px;
+        margin-top: 100vh;
+    }
+
+    .acceuil_histoire_img, .acceuil_histoire_texte {
+        flex: 1 1 100%;
+    }
+
+    .acceuil_histoire_texte {
+        padding-bottom: 40px;
+    }
+
+    .acceuil_histoire_texte h2 {
+        font-size: 24px;
+    }
+
+    .acceuil_histoire_texte p {
+        font-size: 16px;
+    }
+
+    .acceuil_caracteristique {
+        padding-top: 60px;
+    }
+
+    .acceuil_caracteristique > div {
+        min-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .acceuil_caracteristique svg {
+        font-size: 2rem;
+    }
+
+    .acceuil_caracteristique p {
+        font-size: 16px;
+    }
+
+    .actualite_titre {
+        font-size: 24px;
+    }
+
+    .acceuil_actualite {
+        flex-direction: column;
+        padding: 20px 16px;
+        gap: 1rem;
+    }
+
+    .acceuil_actualite > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .acceuil_actualite img {
+        max-height: 220px;
+    }
+
+    .acceuil_privatiser {
+        min-height: 250px;
+        padding: 30px 16px;
+    }
+
+    .acceuil_privatiser h2,
+    .acceuil_privatiser p {
+        font-size: 18px;
+    }
+
+    .acceuil_separation {
+        display: none;
+    }
+}
+
 @media (max-width: 480px) {
     html, body {
         font-size: 14px;
